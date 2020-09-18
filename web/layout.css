@@ -1,0 +1,63 @@
+html, body {
+	height: 100%;
+	font-family: cambria, serif;
+	font-size: 14pt;
+	background-color: #8fb;
+}
+
+h1 {
+	font-size: 40pt;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	margin: 24px 0 48px 0;
+}
+
+#left {
+	width: 30%;
+	height: 300px;
+	float: left;
+	background-color: #6e9;
+}
+
+h2 {
+	font-size: 20pt;
+	color: black;
+	margin: 4px;
+}
+
+#right {
+	width: 70%;
+	float: left;
+}
+
+#newpost {
+	width: 98%;
+	float: left;
+	margin: 0 1%;
+	padding-top: 12px;
+	line-height: 160%;
+	border: 2px solid gold;
+}
+
+#postdetails {
+	width: 40%;
+	margin: 2px 6px;
+	float: left;
+}
+
+textarea {
+	width: 57%;
+	float: left;
+}
+
+[type=submit] {
+	margin: 8% 0 2% 0;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+[id=species] {
+	margin-left: 36px;
+	width: 50%;
+}

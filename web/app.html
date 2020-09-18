@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Gardening log</title>
+		<link rel="stylesheet" href="layout.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<h1>{{name}}'s garden log</h1>
+		<div id="left">
+			<h2>Filter by event</h2>
+			<h2>Filter by species</h2>
+		</div>
+
+		<div id="right">
+			<div id="newpost">
+				<div id="postdetails">
+					<form action="/newEvent">
+						<label for="title">Title:</label><br />
+						<input type="text" id="title" name="title"><br />
+						<label for="event">Event:</label><br />
+						<input type="radio" id="planting" name="event" value="planting">
+						<label for="harvest">Planting</label><br />
+						<input type="radio" id="harvest" name="event" value="harvest">
+						<label for="harvest">Harvest</label><br />
+						<label for="species">Species:</label>
+						<select name="species" id="species">
+							<option value="pumpkin">Pumpkin</option>
+							<option value="courgette">Courgette</option>
+							<option value="carrot">Carrot</option>
+						</select><br />
+						<input type="submit" value="Save new entry">
+					</form>
+				</div>
+				<label for="new_entry">Notes:</label>
+				<textarea id="new_entry" name="new_entry" rows="8" form="submitNewEntry"></textarea>
+			</div>
+
+			<div class="entry">&nbsp;</div>
+			<div class="entry">&nbsp;</div>
+			<div class="entry">&nbsp;</div>
+			<div class="entry">&nbsp;</div>
+		</div>
+
+	</body>
+
+</html>
