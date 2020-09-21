@@ -1,6 +1,6 @@
 html, body {
 	height: 100%;
-	font-family: cambria, serif;
+	font-family: serif;
 	font-size: 14pt;
 	background-color: #8fb;
 }
@@ -35,29 +35,55 @@ h2 {
 	width: 98%;
 	float: left;
 	margin: 0 1%;
-	padding-top: 12px;
-	line-height: 160%;
+	line-height: 150%;
 	border: 2px solid gold;
 }
 
 #postdetails {
 	width: 40%;
-	margin: 2px 6px;
+	float: left;
+	padding: 6px 0;
+}
+
+[for=event], [for=species], [for=date] {
+	width: 32%;
+	float: left;
+	margin-left: 9px;
+}
+
+[id=species], [id=event], [id=doe] {
+	width: 60%;
+	font-family: serif;
+	font-size: 14pt;
 	float: left;
 }
 
 textarea {
-	width: 57%;
+	width: 40%;
+	float: left;
+	margin: 6px 0;
+	font-family: serif;
+	font-size: 13pt;
+}
+
+#savenew {
+	width: 19%;
 	float: left;
 }
 
 [type=submit] {
-	margin: 8% 0 2% 0;
-	font-size: 18pt;
-	font-weight: bold;
+	width: 80%;
+	margin: 9px 0 0 10%;
+	padding: 9px 0;
+	font-size: 16pt;
 }
 
-[id=species] {
-	margin-left: 36px;
-	width: 50%;
+.entry {
+	width: 98%;
+	float: left;
+	margin: 0 1%;
+	margin-top: 24px;
+	line-height: 150%;
+	border: 2px solid gold;
 }
+

@@ -17,26 +17,31 @@
 
 		<div id="right">
 			<div id="newpost">
+				<form action="/newEvent">
 				<div id="postdetails">
-					<form action="/newEvent">
-						<label for="title">Title:</label><br />
-						<input type="text" id="title" name="title"><br />
-						<label for="event">Event:</label><br />
-						<input type="radio" id="planting" name="event" value="planting">
-						<label for="harvest">Planting</label><br />
-						<input type="radio" id="harvest" name="event" value="harvest">
-						<label for="harvest">Harvest</label><br />
-						<label for="species">Species:</label>
-						<select name="species" id="species">
-							<option value="pumpkin">Pumpkin</option>
-							<option value="courgette">Courgette</option>
-							<option value="carrot">Carrot</option>
-						</select><br />
-						<input type="submit" value="Save new entry">
-					</form>
+					<label for="event">Event:</label>
+					<select name="event" id="event">
+						<option value="planting">Planting</option>
+						<option value="harvest">Harvest</option>
+						<option value="weeding">Weeding</option>
+						<option value="other">Other</option>
+					</select><br />
+					<label for="species">Species:</label>
+					<select name="species" id="species">
+						<option value="pumpkin">Pumpkin</option>
+						<option value="courgette">Courgette</option>
+						<option value="carrot">Carrot</option>
+						<option value="other">Other</option>
+						<option value="none">None</option>
+					</select><br />
+					<label for="date">On:</label>
+					<input type="date" id="doe" name="doe">
 				</div>
-				<label for="new_entry">Notes:</label>
-				<textarea id="new_entry" name="new_entry" rows="8" form="submitNewEntry"></textarea>
+				<textarea id="new_entry" name="new_entry" rows="4" form="submitNewEntry" placeholder="Notes..."></textarea>
+				<div id="savenew">
+					<input type="submit" value="Save">
+				</div>
+				</form>
 			</div>
 
 			<div class="entry">&nbsp;</div>
