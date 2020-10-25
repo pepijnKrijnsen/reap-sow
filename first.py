@@ -7,8 +7,7 @@
 # 3. Harvest
 # 4. Other
 
-import os
-import datetime
+import os, datetime
 
 def newLog(action = ""):
     if not action:
